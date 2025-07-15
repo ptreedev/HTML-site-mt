@@ -2,6 +2,7 @@
 
 import reflex as rx
 from rxconfig import config
+from python_bottle_site.pages import dashboard
 
 # from .pages import table
 class State(rx.State):

@@ -34,7 +34,7 @@ def show_user(user: User):
         rx.table.cell(user.gender),
     )
 
-@rx.page(route="/dashboard")
+@rx.page(route="/dashboard/")
 def table() -> rx.Component: 
     return rx.container(
         rx.vstack(
