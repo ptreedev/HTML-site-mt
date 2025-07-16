@@ -1,5 +1,3 @@
-"""Welcome to Reflex! This file outlines the steps to create a basic app."""
-
 import reflex as rx
 from rxconfig import config
 from python_bottle_site.pages import dashboard
@@ -8,9 +6,8 @@ from python_bottle_site.pages import dashboard
 class State(rx.State):
     """The app state."""
 
-
+@rx.page(route="/reflex", title="Portfolio")
 def index() -> rx.Component:
-    # Welcome Page (Index)
     return rx.container(
         rx.color_mode.button(position="bottom-right"),
         rx.vstack(
@@ -33,4 +30,4 @@ def index() -> rx.Component:
 
 
 app = rx.App()
-app.add_page(index)
+# app.add_page(index)
