@@ -15,6 +15,7 @@ def index() -> rx.Component:
             rx.text(
                 "It's built using only python and is using Relfex as a framework",
                 "Look here is another page",
+                "Another line to test github actions",
                 size="5",
             ),
             rx.link(
