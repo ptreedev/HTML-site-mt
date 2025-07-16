@@ -19,10 +19,7 @@ jobs:
         run: |  
           python -m pip install --upgrade pip  
           pip install -r python-bottle-site/requirements.txt
-      - name: Change directory
-        run: |
-          cd python-bottle-site
       - name: Test with pytest  
         run: |  
-          pytest -v -s tests/test_*.py 
+          pytest -v -s python-bottle-site/tests/test_index.py
       
