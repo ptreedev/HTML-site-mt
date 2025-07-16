@@ -6,7 +6,7 @@ from python_bottle_site.pages import dashboard
 class State(rx.State):
     """The app state."""
 
-@rx.page(route="/reflex", title="Portfolio")
+@rx.page(route="/", title="Portfolio")
 def index() -> rx.Component:
     return rx.container(
         rx.color_mode.button(position="bottom-right"),
