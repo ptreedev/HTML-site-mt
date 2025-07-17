@@ -22,5 +22,5 @@ jobs:
           pip install -r python-bottle-site/requirements.txt
       - name: Test with pytest  
         run: |  
-          pytest -v -s python-bottle-site/tests/test_index.py
+          pytest -v -s python-bottle-site/tests/
       
